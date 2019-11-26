@@ -1,2 +1,0 @@
-node discord.js
-pause
