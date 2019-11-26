@@ -1,0 +1,25 @@
+{
+
+    "name": "666bot",
+  
+    "description": "sleep_mx bot",
+  
+    "version": "1.0",
+  
+    "main": "discord.js",
+  
+    "scripts": {
+  
+      "start": "node discord.js"
+  
+    },
+  
+    "dependencies": {
+  
+      "discord.js": "11.1.0",
+  
+      "request": "2.81.0"
+  
+    }
+  
+  }
