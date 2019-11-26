@@ -11,7 +11,7 @@ const tempChannel = require("discord.js-temporary-channel"); //переменн�
 tempChannel.autoCreateChannel(client); //для временного канала
 
 client.login(token); //токен сервера
-client.login(process.env.token);//BOT_TOKEN is the Client Secret
+client.login(process.env.BOT_TOKEN);//BOT_TOKEN is the Client Secret
 
 //счетчик пользователей
 client.on('ready', () => {
