@@ -1,2 +1,0 @@
-web:    node discord.js.web
-worker: node discord.js.worker
