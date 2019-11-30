@@ -12,6 +12,7 @@ tempChannel.autoCreateChannel(client); //для временного канал�
 
 client.login(process.env.BOT_TOKEN);//BOT_TOKEN is the Client Secret
 
+
 //счетчик пользователей
 client.on('ready', () => {
     let myGuild = client.guilds.get('645057877471657984');
@@ -43,6 +44,7 @@ client.on('guildMemberRemove', member => {
     memberCountChannel.setName('Участников: ' + memberCount)
     .then(result => console.log(result))
     .catch(error => console.log(error));
+});
     
 client.on('message', message => {
     
@@ -56,7 +58,7 @@ client.on('message', message => {
             var hcolor = ["0xFF3762","0xFF7A37","37FF9B"] //переменная отвечающая за цвета
             var col = Math.floor((Math.random() * hcolor.length)) //переменная отвечающая за рандом
             if (!xuser) return message.channel.send("Укажи, кого хочешь обнять :heart:")
-            const HugEmbed = new Discord.RichEmbed()
+            const HugEmbed = new discord.RichEmbed()
             .setDescription(xuser + ", " + message.author + " обнял тебя :heart_eyes:")
             .setColor(hcolor[col]) // рандомный цвет
             .setImage(hug[pic])
@@ -65,5 +67,3 @@ client.on('message', message => {
         break;
     }
 })
-    
-});
