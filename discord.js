@@ -3,7 +3,7 @@ const discord = require('discord.js'); // discord.js
 const client = new discord.Client();
 //переменные для подключения
 const token = require('./config.json').token; //токен
-const prefix = require('./config.json').prefix; //префикс для команд
+const prefix = "!"; //префикс для команд
 //переменные для других модулей
 const tempChannel = require("discord.js-temporary-channel"); //переменная для временных каналов
 
